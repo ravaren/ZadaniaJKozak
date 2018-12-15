@@ -20,10 +20,13 @@ public class ZadaniaJKozak {
         System.out.println();
         System.out.println("51. Silnia. Iteracyjnie i rekurencyjnie.");
         System.out.println("52. Ciag Fibonacciego. Iteracyjnie i rekurencyjnie.");
+        System.out.println("53. Funkcja strpos - która zwraca indeks znaku w łańcuchu.");
+        System.out.println();
         System.out.print("Wybierz ćwiczenie do uruchomienia: ");
         System.out.println();
         Scanner odczyt = new Scanner(System.in);
-        int wybor = odczyt.nextInt();
+        //int wybor = odczyt.nextInt();
+        int wybor = 53;
         switch(wybor){
             
             case 41:    Zaj4zad1 zadanie41 = new Zaj4zad1(); 
@@ -38,6 +41,9 @@ public class ZadaniaJKozak {
                         break;
             case 52:    Zaj5zad2 zadanie52 = new Zaj5zad2(); 
                         zadanie52.zadanie();
+                        break;
+            case 53:    Zaj5zad3 zadanie53 = new Zaj5zad3(); 
+                        zadanie53.zadanie();
                         break;
         }
             
