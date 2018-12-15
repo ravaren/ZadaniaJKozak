@@ -13,6 +13,11 @@ public class Zaj5zad3{
     public int strpos(String text, char z){
     int indeks = -1;    
     
+    int limit = text.length();
+    for(int x = 0; x < limit; x++){
+        if(text.charAt(x) == z){indeks = x+1;}    
+    }
+    
     return indeks;    
     }
     
@@ -24,7 +29,9 @@ public class Zaj5zad3{
         System.out.print("Podaj poszukiwany znak: ");
         char znak = odczyt.next().charAt(0);
         Zaj5zad3 indeks = new Zaj5zad3();
-        System.out.print("W podanym tekscie znak " + znak + " występuje na pozycji: " + indeks.strpos(tekst, znak) );
+        int wynik = indeks.strpos(tekst, znak);
+        if(wynik == -1){System.out.println("W podanym tekscie znak " + znak + " NIE występuje!");}
+        else{System.out.println("W podanym tekscie znak " + znak + " występuje na pozycji: " + wynik);}
         
         
         
