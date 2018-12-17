@@ -50,8 +50,11 @@ public class ZadaniaJKozak {
             /**case 54:    Zaj5zad4 zadanie54 = new Zaj5zad4(); 
                         zadanie54.zadanie();
                         break; */
-            case 55:    Zaj5zad5 zadanie54 = new Zaj5zad5(); 
-                        zadanie54.zadanie();
+            case 55:    Zaj5zad5 zadanie55 = new Zaj5zad5(); 
+                        zadanie55.zadanie();
+                        break;
+            case 56:    Zaj5zad6 zadanie56 = new Zaj5zad6(); 
+                        zadanie56.zadanie();
                         break;
         }
             
