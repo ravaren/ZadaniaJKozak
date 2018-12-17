@@ -20,26 +20,70 @@ package zadaniajkozak;
 
 import java.util.Scanner;
 
+
+
 public class Zaj5zad6 {
-    public int strToInt(String str){
+    
+    int pow(int n){
+        int wynik = 1;
+        for(int x = 1; x<n; x++){wynik*=10;}
+        
+        return wynik;
+    }
+    
+    
+
+    public static int strToInt(String str){
         int liczba = 0;
         String integers = "0123456789";
         int x=0;
+        int limit = str.length();
         boolean policzbie = false;
-        do{
+        boolean minus = false;
+        int test = 0;
+        int test2 = 0;
+        boolean wykladniczo = false;
+        int wykladnik = 0;
+        while(x<limit){
             for(int y=0; y<10; y++){
-                if(str.substring(x,x+1).equals(integers.substring(y,y+1))==false && policzbie==true){
+                
+                if(str.substring(x,x+1).equals("-") && policzbie == false){minus = true; test = x+1; break;}//DLA LICZB UJEMNYCH
+                if(str.substring(x,x+1).equals(integers.substring(y,y+1))==false && test == x && minus == true && y==9){minus = false; break;}//DLA LICZB UJEMNYCH
+                
+                if(str.substring(x,x+1).equals("e") && policzbie == true){wykladniczo = true; test2 = x+1; break;}//dla e wykładników
+                if(str.substring(x,x+1).equals(integers.substring(y,y+1))==false && test2 == x && wykladniczo == true && y==9){
+                    wykladniczo = false;
+                    x+=10;
+                    break;}//dla e wykładników
+                
+                
+                if((str.substring(x,x+1).equals(integers.substring(y,y+1))==false) && policzbie==true && y==9){
                     x+=10;
                     break;
                 }
+                
                 if(str.substring(x,x+1).equals(integers.substring(y,y+1))){
-                    liczba = (liczba*10)+y;
-                    policzbie = true;
+                    if(wykladniczo == true){
+                        wykladnik = (wykladnik*10)+y;
+                    }
+                    else{
+                        liczba = (liczba*10)+y;
+                        policzbie = true;
+                    }
+                    
+                    break;
                 }
             }
             x++;
-        }while(x<str.length());
-            
+        }
+        
+        if(wykladniczo && wykladnik>0){
+            Zaj5zad6 mnoznik = new Zaj5zad6();
+            liczba *= mnoznik.pow(wykladnik);
+        }
+        
+        if(minus){liczba*=-1;}
+        
         
         return liczba;
     }
@@ -50,9 +94,18 @@ public class Zaj5zad6 {
         Scanner odczyt = new Scanner(System.in);
         String tekst = odczyt.nextLine();
         Zaj5zad6 wynik = new Zaj5zad6();
-        System.out.print("Liczba całkowita znaleziona w podanym łańuchu wynosi: " + wynik.strToInt(tekst));
+        System.out.println("Liczba całkowita znaleziona w podanym łańuchu wynosi: " + wynik.strToInt(tekst));
+        System.out.println();
         
+        System.out.println("Dodatkowe testowe przykłady:");
+        System.out.println("+12 = " + strToInt("+12") + " (ma być: 12)");
+        System.out.println("0001 = " + strToInt("0001") + " (ma być: 1)");
+        System.out.println("991-234-23 = "+ strToInt("991-234-23") + " (ma być: 991)");
+        System.out.println("+zonk = " + strToInt("+zonk") + " (ma być: 0)");
+        System.out.println("\"" + "\" = " + strToInt("") + " (ma byc: 0)");
+        System.out.println("-12e5 = " + strToInt("-12e5") + " (ma być: -120000)");
+        System.out.println("-12e-5 = " + strToInt("-12e-5") + " (ma być: -12)");
         
-        
+                
     }
 }
