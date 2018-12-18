@@ -28,6 +28,7 @@ public class ZadaniaJKozak {
         System.out.println("58. Metoda wordCount - liczy ilość wyrazów w podanym tekście");
         System.out.println("59. Metoda funkcja podzielNaSlowa - dzieli tekst na słowa");
         System.out.println("510. Metoda strFindAndCount - szuka i zlicza wystąpienia podanej frazy w danym łańcuchu.");
+        System.out.println("511. Procedura strcut - wycina z łańcucha okreslony fragment.");
         System.out.println();
         System.out.print("Wybierz ćwiczenie do uruchomienia: ");
         System.out.println();
@@ -72,6 +73,9 @@ public class ZadaniaJKozak {
                         break; 
             case 510:   Zaj5zad10 zadanie510 = new Zaj5zad10(); 
                         zadanie510.zadanie();
+                        break;  
+            case 511:   Zaj5zad11 zadanie511 = new Zaj5zad11(); 
+                        zadanie511.zadanie();
                         break;            
         }
             
