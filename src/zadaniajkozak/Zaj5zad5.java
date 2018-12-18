@@ -1,3 +1,20 @@
+/**
+ * 5. Zdefiniować funkcję
+boolean startsWith(String str1, String str2)
+, która
+sprawdza, czy łańcuch
+str2
+jest prefiksem łańcucha
+str1
+.
+Przykłady:
+startsWith("Alibaba", "Ali") - wynik true, ponieważ wyraz
+"Alibaba" zaczyna się wyrazem "Ali".
+startsWith("Alibaba", "Alibaba") - wynik true, ponieważ wyraz jest
+zawsze swoim prefiksem.
+startsWith("Kot", "Pies") - wynik false, ponieważ wyraz "Pies"
+nie jest prefiksem wyrazu "Kot"
+ */
 package zadaniajkozak;
 
 import java.util.Scanner;
