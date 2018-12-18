@@ -27,12 +27,13 @@ public class ZadaniaJKozak {
         System.out.println("57. Funkcja/metoda strFind szuka podanego łańcucha w drugim łańcuchu.");
         System.out.println("58. Metoda wordCount - liczy ilość wyrazów w podanym tekście");
         System.out.println("59. Metoda funkcja podzielNaSlowa - dzieli tekst na słowa");
+        System.out.println("510. Metoda strFindAndCount - szuka i zlicza wystąpienia podanej frazy w danym łańcuchu.");
         System.out.println();
         System.out.print("Wybierz ćwiczenie do uruchomienia: ");
         System.out.println();
         Scanner odczyt = new Scanner(System.in);
         //int wybor = odczyt.nextInt();
-        int wybor = 59;
+        int wybor = 510;
         switch(wybor){
             
             case 41:    Zaj4zad1 zadanie41 = new Zaj4zad1(); 
@@ -68,7 +69,10 @@ public class ZadaniaJKozak {
                         break;  
             case 59:    Zaj5zad9 zadanie59 = new Zaj5zad9(); 
                         zadanie59.zadanie();
-                        break;             
+                        break; 
+            case 510:   Zaj5zad10 zadanie510 = new Zaj5zad10(); 
+                        zadanie510.zadanie();
+                        break;            
         }
             
         
