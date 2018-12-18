@@ -25,12 +25,13 @@ public class ZadaniaJKozak {
         System.out.println("55. Funkcja/metdoda startsWith - sprawdza czy tekst zaczyna sie danym prefiksem.");
         System.out.println("56. Funkcja strToInt - wyciąga liczbe całkowitą z łańcucha.");
         System.out.println("57. Funkcja/metoda strFind szuka podanego łańcucha w drugim łańcuchu.");
+        System.out.println("58. Metoda wordCount - liczy ilość wyrazów w podanym tekście");
         System.out.println();
         System.out.print("Wybierz ćwiczenie do uruchomienia: ");
         System.out.println();
         Scanner odczyt = new Scanner(System.in);
         //int wybor = odczyt.nextInt();
-        int wybor = 57;
+        int wybor = 58;
         switch(wybor){
             
             case 41:    Zaj4zad1 zadanie41 = new Zaj4zad1(); 
@@ -60,7 +61,10 @@ public class ZadaniaJKozak {
                         break;
             case 57:    Zaj5zad7 zadanie57 = new Zaj5zad7(); 
                         zadanie57.zadanie();
-                        break;            
+                        break;  
+            case 58:    Zaj5zad8 zadanie58 = new Zaj5zad8(); 
+                        zadanie58.zadanie();
+                        break;             
         }
             
         
