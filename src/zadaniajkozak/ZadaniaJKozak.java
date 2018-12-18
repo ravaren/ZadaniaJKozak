@@ -26,6 +26,7 @@ public class ZadaniaJKozak {
         System.out.println("56. Funkcja strToInt - wyciąga liczbe całkowitą z łańcucha.");
         System.out.println("57. Funkcja/metoda strFind szuka podanego łańcucha w drugim łańcuchu.");
         System.out.println("58. Metoda wordCount - liczy ilość wyrazów w podanym tekście");
+        System.out.println("59. Metoda funkcja podzielNaSlowa - dzieli tekst na słowa");
         System.out.println();
         System.out.print("Wybierz ćwiczenie do uruchomienia: ");
         System.out.println();
@@ -64,6 +65,9 @@ public class ZadaniaJKozak {
                         break;  
             case 58:    Zaj5zad8 zadanie58 = new Zaj5zad8(); 
                         zadanie58.zadanie();
+                        break;  
+            case 59:    Zaj5zad9 zadanie59 = new Zaj5zad9(); 
+                        zadanie59.zadanie();
                         break;             
         }
             
