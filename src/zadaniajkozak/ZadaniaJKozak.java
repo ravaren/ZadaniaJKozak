@@ -24,12 +24,13 @@ public class ZadaniaJKozak {
         System.out.println("54. Funkcja/metdoda flipCase odwracajaca wielkość liter w łańcuchu.");
         System.out.println("55. Funkcja/metdoda startsWith - sprawdza czy tekst zaczyna sie danym prefiksem.");
         System.out.println("56. Funkcja strToInt - wyciąga liczbe całkowitą z łańcucha.");
+        System.out.println("57. Funkcja/metoda strFind szuka podanego łańcucha w drugim łańcuchu.");
         System.out.println();
         System.out.print("Wybierz ćwiczenie do uruchomienia: ");
         System.out.println();
         Scanner odczyt = new Scanner(System.in);
         //int wybor = odczyt.nextInt();
-        int wybor = 54;
+        int wybor = 57;
         switch(wybor){
             
             case 41:    Zaj4zad1 zadanie41 = new Zaj4zad1(); 

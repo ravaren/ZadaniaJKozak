@@ -18,6 +18,15 @@ public class Zaj5zad7 {
     
     int strfind(String gdzie, String co){
         int indeks = -1;
+        int gdzieLength = gdzie.length();
+        int coLength = co.length();
+        
+        for(int x=0; x<=(gdzieLength - coLength);x++){
+            if(gdzie.substring(x,x+coLength).equals(co)){
+                indeks = x;
+                break;
+            }
+        }
         
         return indeks;
     }
@@ -32,7 +41,7 @@ public class Zaj5zad7 {
         
         Zaj5zad7 wynik = new Zaj5zad7();
         
-        System.out.println("Podana fraza zaczyna się na indeksie: ");
+        System.out.println("Podana fraza zaczyna się na indeksie dla - ");
         System.out.println("Dla standardowej metody indexOf: " + tekst.indexOf(szukane));
         System.out.println("Dla mojej metody strfind: " + wynik.strfind(tekst, szukane));
         
