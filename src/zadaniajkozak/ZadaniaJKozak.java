@@ -57,6 +57,9 @@ public class ZadaniaJKozak {
             case 56:    Zaj5zad6 zadanie56 = new Zaj5zad6(); 
                         zadanie56.zadanie();
                         break;
+            case 57:    Zaj5zad7 zadanie57 = new Zaj5zad7(); 
+                        zadanie57.zadanie();
+                        break;            
         }
             
         
