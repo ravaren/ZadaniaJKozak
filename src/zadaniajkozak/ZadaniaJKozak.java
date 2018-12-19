@@ -34,7 +34,7 @@ public class ZadaniaJKozak {
         System.out.println();
         Scanner odczyt = new Scanner(System.in);
         //int wybor = odczyt.nextInt();
-        int wybor = 510;
+        int wybor = 511;
         switch(wybor){
             
             case 41:    Zaj4zad1 zadanie41 = new Zaj4zad1(); 
