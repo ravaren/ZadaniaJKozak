@@ -26,7 +26,7 @@ public class Zaj5zad6 {
     
     int pow(int n){
         int wynik = 1;
-        for(int x = 1; x<n; x++){wynik*=10;}
+        for(int x = 1; x<=n; x++){wynik*=10;}
         
         return wynik;
     }
@@ -34,6 +34,7 @@ public class Zaj5zad6 {
     
 
     public static int strToInt(String str){
+        
         int liczba = 0;
         String integers = "0123456789";
         int x=0;
@@ -103,7 +104,7 @@ public class Zaj5zad6 {
         System.out.println("991-234-23 = "+ strToInt("991-234-23") + " (ma być: 991)");
         System.out.println("+zonk = " + strToInt("+zonk") + " (ma być: 0)");
         System.out.println("\"" + "\" = " + strToInt("") + " (ma byc: 0)");
-        System.out.println("-12e5 = " + strToInt("-12e5") + " (ma być: -120000)");
+        System.out.println("-12e5 = " + strToInt("-12e5") + " (ma być: -1200000)");
         System.out.println("-12e-5 = " + strToInt("-12e-5") + " (ma być: -12)");
         
                 
