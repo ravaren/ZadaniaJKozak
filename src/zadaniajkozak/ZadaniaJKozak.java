@@ -30,12 +30,13 @@ public class ZadaniaJKozak {
         System.out.println("510. Metoda strFindAndCount - szuka i zlicza wystąpienia podanej frazy w danym łańcuchu.");
         System.out.println("511. Procedura strcut - wycina z łańcucha okreslony fragment.");
         System.out.println("512. Program wykorzystujący poprzednie funkcje do przeprowadzenia bezsensownych zadań.");
+        System.out.println("513. Program przestawiajacy łańcuch w podanej kolejnośći.");
         System.out.println();
         System.out.print("Wybierz ćwiczenie do uruchomienia: ");
         System.out.println();
         Scanner odczyt = new Scanner(System.in);
         //int wybor = odczyt.nextInt();
-        int wybor = 512;
+        int wybor = 513;
         switch(wybor){
             
             case 41:    Zaj4zad1 zadanie41 = new Zaj4zad1(); 
@@ -80,6 +81,9 @@ public class ZadaniaJKozak {
                         break;
             case 512:   Zaj5zad12 zadanie512 = new Zaj5zad12(); 
                         zadanie512.zadanie();
+                        break;
+            case 513:   Zaj5zad13 zadanie513 = new Zaj5zad13(); 
+                        zadanie513.zadanie();
                         break;
         }
             
