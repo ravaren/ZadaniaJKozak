@@ -32,12 +32,13 @@ public class ZadaniaJKozak {
         System.out.println("512. Program wykorzystujący poprzednie funkcje do przeprowadzenia bezsensownych zadań.");
         System.out.println("513. Program przestawiajacy łańcuch w podanej kolejnośći.");
         System.out.println("514. Program zawierający metodę sprawdzającą czy podane teksty są swoimi anagramami.");
+        System.out.println("515. Przekształcenia RGB.");
         System.out.println();
         System.out.print("Wybierz ćwiczenie do uruchomienia: ");
         System.out.println();
         Scanner odczyt = new Scanner(System.in);
         //int wybor = odczyt.nextInt();
-        int wybor = 514;
+        int wybor = 515;
         switch(wybor){
             
             case 41:    Zaj4zad1 zadanie41 = new Zaj4zad1(); 
@@ -89,6 +90,9 @@ public class ZadaniaJKozak {
             case 514:   Zaj5zad14 zadanie514 = new Zaj5zad14(); 
                         zadanie514.zadanie();
                         break;
+            case 515:   Zaj5zad15 zadanie515 = new Zaj5zad15(); 
+                        zadanie515.zadanie();
+                        break;            
         }
             
         
