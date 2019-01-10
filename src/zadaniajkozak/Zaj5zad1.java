@@ -11,13 +11,13 @@ import java.util.Scanner;
 public class Zaj5zad1{
 	
 	public int rekurencja(int n){
-			if(n>0){n+=rekurencja(n-1);}
+			if(n>1){n*=rekurencja(n-1);}
 			return n;
 	}
 	
 	public int iteracja(int n){
-			int silnia = 0;
-			for(int x = n; x>0; x--){silnia+=x;}
+			int silnia = 1;
+			for(int x = n; x>0; x--){silnia*=x;}
 			return silnia;
 	}
 	
